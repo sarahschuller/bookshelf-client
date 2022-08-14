@@ -1,10 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main: #ccd5ae;
+    --highlt: #fefae0;
+    --secondary: #d4a373;
+    --mainlt: #e9edc9;
+    --secondarylt: #faedcd;
+}
+
+* {
+    box-sizing: border-box;
+}
 body {
-    background-color: gray;
+    background-color: var(--main);
+}
+
+h1 {
+    font-family: 'Bitter', serif;
+}
+
+h2 {
+    font-family: 'Bitter', serif;
+}
+
+button {
+    padding: 1rem;
+    margin: .5rem;
+    background-color: var(--main);
+    border: none;
+    font-family: 'Bitter', serif;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: var(--secondary);
+    transition: .4s;
+}
+
+form {
+    background-color: var(--secondarylt);
+    padding: 1rem;
+    border-radius: 5%;
+}
+
+form select {
+    padding: .5rem;
+    background-color: var(--main);
+    border: none;
+    margin: 1px;
+    font-family: 'Bitter', serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+form select:hover {
+    background-color: var(--secondary);
+    transition: .4s;
+}
+
+form input {
+    background-color: var(--highlt);
+    border: 1px solid black;
+    margin: 1px;
 }
 
 .header {
-    background-color: yellow;
+    background-color: var(--secondary);
     height: 50px;
+    border-radius: 1%;
+    text-align: center;
+    box-shadow: 2rem black;
+}
+
+.header span {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Bitter', serif;
 }
 
 .App {
@@ -13,21 +84,19 @@ body {
     margin: 1rem;
     padding: 1rem;
     justify-content: space-between;
-    background-color:violet;
-    border: .2rem solid black;
+    max-height: 550px;
     overflow: scroll;
 }
 
-h2 {
-    text-decoration: underline;
-}
 
 .shelf {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: .5rem;
+    padding: .5rem;
     text-align: center;
+    background-color: var(--highlt);
+    border-radius: 3%;
 }
 
 .library {
@@ -35,7 +104,10 @@ h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: .5rem;
+    width: 280px;
+    padding: .5rem;
+    background-color: var(--highlt);
+    border-radius: 3%;
 }
 
 .book-edit {
