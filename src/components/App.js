@@ -63,7 +63,7 @@ render() {
         </ul>
       </div>
       <Library
-      books={this.state.bookss}
+      books={this.state.books}
       library={this.state.library}
       />
     </div>

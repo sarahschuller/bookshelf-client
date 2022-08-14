@@ -40,7 +40,7 @@ button:hover {
 form {
     background-color: var(--secondarylt);
     padding: 1rem;
-    border-radius: 5%;
+    border-radius: 1%;
 }
 
 form select {
@@ -70,6 +70,7 @@ form input {
     border-radius: 1%;
     text-align: center;
     box-shadow: 2rem black;
+    margin: 0 .5rem;
 }
 
 .header span {
@@ -81,11 +82,13 @@ form input {
 .App {
     display: flex;
     flex-direction: row;
-    margin: 1rem;
+    margin: 1rem .5rem;
     padding: 1rem;
     justify-content: space-between;
     max-height: 550px;
     overflow: scroll;
+    background-color: var(--highlt);
+    border-radius: 1%;
 }
 
 
@@ -95,8 +98,6 @@ form input {
     align-items: center;
     padding: .5rem;
     text-align: center;
-    background-color: var(--highlt);
-    border-radius: 3%;
 }
 
 .library {
@@ -106,8 +107,6 @@ form input {
     text-align: center;
     width: 280px;
     padding: .5rem;
-    background-color: var(--highlt);
-    border-radius: 3%;
 }
 
 .book-edit {

@@ -1,13 +1,13 @@
 import React from "react";
 import AddBookForm from "./AddBookForm";
-import EditBookForm from "./EditBookForm";
+// import EditBookForm from "./EditBookForm";
 
 class Shelf extends React.Component {
     render() {
         return (
             <div className="shelf">
                 <h2>The Shelf</h2>
-                {Object.keys(this.props.books).map(key => (
+                {/* {Object.keys(this.props.books).map(key => (
                 <EditBookForm
                     key={key}
                     index={key}
@@ -15,7 +15,7 @@ class Shelf extends React.Component {
                     updateBook={this.props.updateBook}
                     deleteBook={this.props.deleteBook}
                 />
-                ))}
+                ))} */}
                 <AddBookForm addBook={this.props.addBook}/>
                 <button onClick={this.props.loadSampleBooks}>
                 Load Sample Books
