@@ -1,0 +1,27 @@
+.header {
+    background-color: yellow;
+}
+
+.App {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+    background-color:violet;
+    border: .2rem solid black;
+}
+
+.shelf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem;
+}
+
+.library {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
