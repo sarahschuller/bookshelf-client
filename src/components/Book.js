@@ -2,11 +2,7 @@ import React from "react";
 
 class Book extends React.Component {
     render() {
-        const title = this.props.details.title;
-        const author = this.props.details.author;
-        const desc = this.props.details.desc;
-
-
+        const { title, author, desc } = this.props.details;
         return (
             <div className="book">
                 <li className="book-list">

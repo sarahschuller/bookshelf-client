@@ -1,4 +1,5 @@
-const sampleBooks = {
+const books = {
+
     book1: {
       title: "The Lord of the Rings",
       author: "J.R.R. Tolkien",
@@ -71,4 +72,4 @@ const sampleBooks = {
     }
   };
   
-  export default sampleBooks;
+  export default books;

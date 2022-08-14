@@ -28,6 +28,7 @@ class App extends React.Component {
 
   loadSampleBooks = () => {
     this.setState({ books: sampleBooks });
+    console.log(books)
   };
 
   addToLibrary = key => {
