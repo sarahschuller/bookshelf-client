@@ -3,9 +3,8 @@ import React from "react";
 class AddBookForm extends React.Component {
     titleRef = React.createRef();
     authorRef = React.createRef();
-    pagesRef = React.createRef();
+    descRef = React.createRef();
     isReadRef = React.createRef();
-    imageRef = React.createRef();
 
     createBook = (e) => {
         // Stop the form from submitting
@@ -14,7 +13,7 @@ class AddBookForm extends React.Component {
         const book = {
             title: this.titleRef.current.value,
             author: this.authorRef.current.value,
-            pages: this.pagesRef.current.value,
+            desc: this.descRef.current.value,
         };
         this.props.addBook(book);
         // Refresh the form
@@ -28,7 +27,7 @@ class AddBookForm extends React.Component {
                 <h2>Add A New Book</h2>
                 <input name="title" ref={this.titleRef} type="text" placeholder="Title" />
                 <input name="author" ref={this.authorRef} type="text" placeholder="Author" />
-                <input name="pages" ref={this.pagesRef} type="number" placeholder="Pages" />
+                <input name="desc" ref={this.descRef} type="text" placeholder="Description" />
                 <select name="isRead" ref={this.isReadRef} >
                     <option value="isRead">I've read this!</option>
                     <option value="isNotRead">I haven't read this yet!</option>
