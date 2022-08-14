@@ -1,5 +1,10 @@
+body {
+    background-color: gray;
+}
+
 .header {
     background-color: yellow;
+    height: 50px;
 }
 
 .App {
@@ -10,6 +15,11 @@
     justify-content: space-between;
     background-color:violet;
     border: .2rem solid black;
+    overflow: scroll;
+}
+
+h2 {
+    text-decoration: underline;
 }
 
 .shelf {
@@ -17,6 +27,7 @@
     flex-direction: column;
     align-items: center;
     margin: .5rem;
+    text-align: center;
 }
 
 .library {
@@ -24,4 +35,23 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: .5rem;
+}
+
+.book-edit {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+}
+
+.book-edit h2 {
+    text-align: center;
+}
+
+.book-edit input {
+    padding: 10px;
+}
+
+.book-edit option {
+    padding: 10px;
 }
