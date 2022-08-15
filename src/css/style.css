@@ -21,11 +21,22 @@ h1 {
 
 h2 {
     font-family: 'Bitter', serif;
+    font-weight: 900;
+}
+
+h3 {
+    font-family: 'Bitter', serif;
+    font-weight: 800;
+}
+
+h4 {
+    font-family: 'Bitter', serif;
+    font-weight: 700;
 }
 
 button {
     padding: 1rem;
-    margin: .5rem;
+    margin: .2rem;
     background-color: var(--main);
     border: none;
     font-family: 'Bitter', serif;
@@ -69,7 +80,7 @@ form input {
     height: 50px;
     border-radius: 1%;
     text-align: center;
-    box-shadow: 2rem black;
+    box-shadow: 0 1px 1px black;
     margin: 0 .5rem;
 }
 
@@ -85,7 +96,7 @@ form input {
     margin: 1rem .5rem;
     padding: 1rem;
     justify-content: space-between;
-    max-height: 550px;
+    max-height: 575px;
     overflow: scroll;
     background-color: var(--highlt);
     border-radius: 1%;
@@ -100,13 +111,20 @@ form input {
     text-align: center;
 }
 
-.library {
+.library-wrap {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     width: 280px;
     padding: .5rem;
+}
+
+.library-header {
+    text-align: center;
+}
+
+.library li {
+    border-bottom: 1px solid black;
+    list-style: decimal;
 }
 
 .book-edit {
@@ -126,3 +144,25 @@ form input {
 .book-edit option {
     padding: 10px;
 }
+
+.book-list {
+    list-style: none;
+    width: 300px;
+}
+
+.book-list li {
+    margin: .2rem;
+    padding: .2rem;
+}
+
+.book-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Bitter', serif;
+}
+
+.author-name {
+    font-weight: 500;
+    font-family: 'Bitter', serif;
+}
+

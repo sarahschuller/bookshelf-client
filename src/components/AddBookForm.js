@@ -24,7 +24,7 @@ class AddBookForm extends React.Component {
         return (
             <div className="add-book-form">
             <form className="book-edit" onSubmit={this.createBook}>
-                <h2>Add A New Book</h2>
+                <h3>Add A New Book</h3>
                 <input name="title" ref={this.titleRef} type="text" placeholder="Title" />
                 <input name="author" ref={this.authorRef} type="text" placeholder="Author" />
                 <input name="desc" ref={this.descRef} type="text" placeholder="Description" />
