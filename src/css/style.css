@@ -116,6 +116,7 @@ form input {
     flex-direction: column;
     width: 280px;
     padding: .5rem;
+    border-left: 7px ridge var(--secondary);
 }
 
 .library-header {
@@ -123,8 +124,9 @@ form input {
 }
 
 .library li {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--main);
     list-style: decimal;
+    padding-bottom: .5rem;
 }
 
 .book-edit {
