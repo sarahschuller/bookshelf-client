@@ -95,7 +95,6 @@ class App extends React.Component {
       <div className="Main">
       <Header />
       <div className="App">
-        <div>
         <Shelf
           addBook={this.addBook}
           updateBook={this.updateBook}
@@ -113,15 +112,17 @@ class App extends React.Component {
               />
             ))}
           </ul>
+          <Library
+            books={this.state.books}
+            library={this.state.library}
+            removeFromLibrary={this.removeFromLibrary}
+            expandBookDetails={this.expandBookDetails}
+            />
+          
         </div>
-        <Library
-        books={this.state.books}
-        library={this.state.library}
-        removeFromLibrary={this.removeFromLibrary}
-        expandBookDetails={this.expandBookDetails}
-        />
+        
       </div>
-      </div>
+
     );
   };
   }  

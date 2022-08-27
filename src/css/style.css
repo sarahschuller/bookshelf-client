@@ -109,6 +109,7 @@ form input {
     align-items: center;
     padding: .5rem;
     text-align: center;
+    margin: .5rem;
 }
 
 .library-wrap {
@@ -127,6 +128,12 @@ form input {
     border-bottom: 1px solid var(--main);
     list-style: decimal;
     padding-bottom: .5rem;
+}
+
+.books {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .book-edit {
@@ -168,3 +175,12 @@ form input {
     font-family: 'Bitter', serif;
 }
 
+@media all and (max-width: 760px) {
+    .App {
+        flex-direction: column;
+    }
+
+    .books {
+        align-items: center;
+    }
+}

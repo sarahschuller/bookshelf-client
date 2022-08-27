@@ -34,7 +34,6 @@ class AddBookForm extends React.Component {
                 </select>
                 <button type="submit">+ Add Book</button>
             </form>
-            <h2>Available Books</h2>
             </div>
         )
     }
