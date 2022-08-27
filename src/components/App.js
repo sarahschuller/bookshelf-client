@@ -4,6 +4,7 @@ import Book from "./Book";
 import Library from "./Library";
 import Header from "./Header";
 import sampleBooks from "../sample-books.js"
+import BookDetails from "./BookDetails";
 
 class App extends React.Component {
   state = {
@@ -89,6 +90,7 @@ class App extends React.Component {
     // open modal/pop up with additional book details
     const button = e.currentTarget;
     console.log('You just clicked it')
+
   }
 
   render() {
