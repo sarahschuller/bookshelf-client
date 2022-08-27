@@ -85,9 +85,10 @@ class App extends React.Component {
     this.setState({ library });
   };
 
-  expandBookDetails = key => {
-    console.log('it works!')
+  expandBookDetails(e) {
     // open modal/pop up with additional book details
+    const button = e.currentTarget;
+    console.log('You just clicked it')
   }
 
   render() {
